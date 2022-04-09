@@ -2,13 +2,13 @@ package chess.domain.dao;
 
 public class FakeBoard {
 
-    private final int turn;
+    private final String turn;
 
-    public FakeBoard(int turn) {
+    public FakeBoard(String turn) {
         this.turn = turn;
     }
 
-    public int getTurn() {
+    public String getTurn() {
         return turn;
     }
 }

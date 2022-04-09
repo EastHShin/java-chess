@@ -5,9 +5,9 @@ public class FakePiece {
     private final long boardId;
     private final String position;
     private final String type;
-    private final int color;
+    private final String color;
 
-    public FakePiece(long boardId, String position, String type, int color) {
+    public FakePiece(long boardId, String position, String type, String color) {
         this.boardId = boardId;
         this.position = position;
         this.type = type;
@@ -22,7 +22,7 @@ public class FakePiece {
         return type;
     }
 
-    public int getColor() {
+    public String getColor() {
         return color;
     }
 }

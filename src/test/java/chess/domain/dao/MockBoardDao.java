@@ -10,7 +10,7 @@ public class MockBoardDao implements BoardDao {
 
     @Override
     public void save(Color turn) {
-        fakeBoard.put(1, new FakeBoard(turn.ordinal()));
+        fakeBoard.put(1, new FakeBoard(turn.name()));
     }
 
     @Override

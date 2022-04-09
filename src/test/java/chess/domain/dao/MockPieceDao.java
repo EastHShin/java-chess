@@ -20,7 +20,7 @@ public class MockPieceDao implements PieceDao {
             Position position = positionPieceEntry.getKey();
             Piece piece = positionPieceEntry.getValue();
             fakePiece.put(index++,
-                    new FakePiece(1, position.stringName(), piece.getSymbol(), piece.getColor().ordinal()));
+                    new FakePiece(1, position.stringName(), piece.getSymbol(), piece.getColor().name()));
         }
     }
 
