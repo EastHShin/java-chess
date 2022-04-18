@@ -55,7 +55,7 @@ public class BoardDaoImpl implements BoardDao {
 
             final ResultSet resultSet = statement.executeQuery();
             if (!resultSet.next()) {
-                throw new SQLException();
+                throw new IllegalStateException("예상치 못한 에러가 발생했습니다. 다시 시도해주세요.");
             }
             return Color.from(resultSet.getString("turn"));
         } catch (SQLException e) {
