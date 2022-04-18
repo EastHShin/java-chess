@@ -4,8 +4,8 @@ import static spark.Spark.get;
 import static spark.Spark.port;
 import static spark.Spark.post;
 
-import chess.domain.dao.BoardDaoImpl;
-import chess.domain.dao.PieceDaoImpl;
+import chess.dao.BoardDaoImpl;
+import chess.dao.PieceDaoImpl;
 import chess.dto.ResponseDto;
 import chess.dto.ResultDto;
 import chess.dto.StatusDto;

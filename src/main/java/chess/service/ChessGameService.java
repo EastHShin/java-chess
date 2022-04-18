@@ -4,8 +4,8 @@ import chess.domain.ChessGame;
 import chess.domain.Color;
 import chess.domain.Winner;
 import chess.domain.board.Position;
-import chess.domain.dao.BoardDao;
-import chess.domain.dao.PieceDao;
+import chess.dao.BoardDao;
+import chess.dao.PieceDao;
 import chess.dto.ChessBoardDto;
 import chess.dto.ResponseDto;
 
