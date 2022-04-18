@@ -28,7 +28,7 @@ public class ChessWebController {
 
         get("/start", (req, res) -> {
             final ResponseDto responseDto = chessGameService.start();
-            return responseDto.toString();
+            return responseDto.toJson();
         });
 
         get("/chess", (req, res) -> {
@@ -40,7 +40,7 @@ public class ChessWebController {
         post("/move", (req, res) -> {
             List<String> command = Arrays.asList(req.body().split(" "));
             final ResponseDto responseDto = chessGameService.move(command.get(0), command.get(1));
-            return responseDto.toString();
+            return responseDto.toJson();
         });
 
         get("/status", (req, res) -> {
@@ -51,7 +51,7 @@ public class ChessWebController {
 
         get("/end", (req, res) -> {
             final ResponseDto responseDto = chessGameService.end();
-            return responseDto.toString();
+            return responseDto.toJson();
         });
 
         get("/result", (req, res) -> {

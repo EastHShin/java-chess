@@ -18,8 +18,7 @@ public class ResponseDto {
         return errorMessage;
     }
 
-    @Override
-    public String toString() {
+    public String toJson() {
         return "{" + "\"statusCode\" : " + statusCode
                 + ", \"errorMessage\" : \"" + errorMessage + "\"}";
     }
