@@ -34,8 +34,10 @@ public class ChessGameService {
         }
     }
 
-    public ResponseDto move(Position source, Position target) {
+    public ResponseDto move(String rawSource, String rawTarget) {
         try {
+            final Position source = Position.from(rawSource);
+            final Position target = Position.from(rawTarget);
             chessGame.move(source, target);
             savePieces(source, target);
             if (!isRunning()) {
